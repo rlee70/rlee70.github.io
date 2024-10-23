@@ -29,14 +29,13 @@
         <main>
             <h2>Business Information Form</h2>
             <form action="#" method="post">
-                <input type="text" id="name" placeholder="Your name:"required>
+                <input type="text" id="name" placeholder="Your name:" required>
+                <br>
+                                
+                <input type="number" id="phone"  placeholder="Your Phone Number:" required>
                 <br>
         
-                
-                <input type="number" id="phone"  required placeholder="Your Phone Number:">
-                <br>
-        
-                <input type="email" id="email" required placeholder="Your email:">
+                <input type="email" id="email" placeholder="Your email:" required>
                 <br>
         
                 <fieldset>
@@ -54,16 +53,16 @@
         
                 <fieldset>
                   <legend>Preferred Contact Method:</legend>
-                  <input type="radio" id="contact_email" value="email" required>
+                  <input type="radio" id="contact-email" value="email">
                   <label for="contact_email">Email</label><br>
         
-                  <input type="radio" id="contact_phone" value="phone">
-                  <label for="contact_phone">Phone</label><br>
+                  <input type="radio" id="contact-phone" value="phone">
+                  <label for="contact-phone">Phone</label><br>
                 </fieldset>
                 <br>
         
-                <label for="contact_time">Best Day for Meeting:</label>
-                <select id="contact_time" name="contact_time" required>
+                <label for="contact-time">Best Day for Meeting:</label>
+                <select id="contact-time" required>
                   <option value="monday">Monday</option>
                   <option value="tuesday">Tuesday</option>
                   <option value="wednesday">Wednesday</option>
