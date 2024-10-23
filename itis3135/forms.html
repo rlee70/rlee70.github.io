@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kai Lee's Kicking Lion | ITIS3135 | Forms</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+    <style>
+        .wrapper {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        table {
+            text-align: center;
+            width: 100%;
+            border-color: #003d5b;
+            justify-content: center;
+        }
+
+        li {
+            list-style-type: none;
+            width: 97%;
+        }
+
+        tbody tr:nth-of-type(even) {
+        background-color: #003d5b;
+        color: #fff;
+        } 
+
+        thead:nth-of-type(1) {
+            background-color: black;
+            color: #fff; 
+        }     
+
+        .role {
+            background-color:#003d5b;
+            color: #fff; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>Business Information Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <br>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone"  required>
+                <br>
+        
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+                <br>
+        
+                <fieldset>
+                  <legend>Services Interested In:</legend>
+                  <input type="checkbox" id="service1" value="webdesign">
+                  <label for="service1">Web Design</label><br>
+        
+                  <input type="checkbox" id="service2" name="services" value="marketing">
+                  <label for="service2">Marketing</label><br>
+
+                  <input type="checkbox" id="service3" name="services" value="consulting">
+                  <label for="service3">Consulting</label>
+                </fieldset>
+                <br>
+        
+                <fieldset>
+                  <legend>Preferred Contact Method:</legend>
+                  <input type="radio" id="contact_email" value="email" required>
+                  <label for="contact_email">Email</label><br>
+        
+                  <input type="radio" id="contact_phone" value="phone">
+                  <label for="contact_phone">Phone</label><br>
+                </fieldset>
+                <br>
+        
+                <label for="contact_time">Best Day for Meeting:</label>
+                <select id="contact_time" name="contact_time" required>
+                  <option value="monday">Monday</option>
+                  <option value="tuesday">Tuesday</option>
+                  <option value="wednesday">Wednesday</option>
+                  <option value="thursday">Thursday</option>
+                  <option value="friday">Friday</option>
+                </select>
+                <br><br>
+        
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+              </form>
+        </main>
+        <footer class="wrapper">
+
+            <div data-include="components/footer.html"></div>
+        </footer>
+    </div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+
+</body>
+
+</html>
