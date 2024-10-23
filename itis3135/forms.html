@@ -14,31 +14,9 @@
             flex-direction: column;
         }
 
-        table {
-            text-align: center;
-            width: 100%;
-            border-color: #003d5b;
-            justify-content: center;
-        }
-
-        li {
-            list-style-type: none;
-            width: 97%;
-        }
-
-        tbody tr:nth-of-type(even) {
-        background-color: #003d5b;
-        color: #fff;
-        } 
-
-        thead:nth-of-type(1) {
-            background-color: black;
-            color: #fff; 
-        }     
-
-        .role {
-            background-color:#003d5b;
-            color: #fff; 
+        fieldset {
+            width: 50%;
+            margin: 10px auto;
         }
     </style>
 </head>
@@ -51,16 +29,14 @@
         <main>
             <h2>Business Information Form</h2>
             <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
+                <input type="text" id="name" placeholder="Your name:"required>
                 <br>
         
-                <label for="phone">Phone Number:</label>
-                <input type="number" id="phone"  required>
+                
+                <input type="number" id="phone"  required placeholder="Your Phone Number:">
                 <br>
         
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" required placeholder="Your email:">
                 <br>
         
                 <fieldset>
