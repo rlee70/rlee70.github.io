@@ -26,15 +26,19 @@
             width: 97%;
         }
 
-        tbody tr:nth-child(even) {
+        tbody tr:nth-of-type(even) {
         background-color: #777;
-        color: #fff;
+        color: #003d5b;
         } 
 
-        thead:nth-child(1) {
+        thead:nth-of-type(1) {
             background-color: black;
             color: #fff; 
         }     
+
+        .role {
+            color:#003d5b;
+        }
     </style>
 </head>
 
@@ -134,7 +138,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td rowspan="3">Finance</td>
+                            <td class="role" rowspan="3">Finance</td>
                             <td>Nicolas Puertos</td>
                             <td>npuertos3@gmail.com</td>
                             <td>5</td>
@@ -153,7 +157,7 @@
                             <td>55,000</td>
                         </tr>
                         <tr>
-                            <td rowspan="2">Engineering</td>
+                            <td class="role" rowspan="3">Engineering</td>
                             <td>Quinten Barrow</td>
                             <td>qmbarrow@gmail.com</td>
                             <td>5</td>
@@ -166,7 +170,13 @@
                             <td>65,000</td>
                         </tr>
                         <tr>
-                            <td rowspan="3">Marketing</td>
+                            <td>Julio Antinozzi</td>
+                            <td>yojenshao@gmail.com</td>
+                            <td>11</td>
+                            <td>65,000</td>
+                        </tr>
+                        <tr>
+                            <td class="role" rowspan="3">Marketing</td>
                             <td>Martha Choe</td>
                             <td>marthachoe@gmail.com</td>
                             <td>20</td>
@@ -186,8 +196,8 @@
                         </tr>
                         <tr>
                             <th class colspan="3">Total Years of Service</th>
-                            <td colspan="1">91</td>
-                            <td>495,000</td>
+                            <td colspan="1">102</td>
+                            <td>560,000</td>
                         </tr>
                     </tbody>
                 </table>
