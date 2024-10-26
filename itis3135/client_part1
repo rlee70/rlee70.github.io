@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kai Lee's Kicking Lion | ITIS3135 | Client Project Part 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>My website will serve as the all-in-one page for anyone intersted in the UNCC Men's Club Soccer team. The
+            intended users of this site are any students interested in the club team, as well as other schools, or
+            parents of students. The content in this website will include but not be limited to: a home page, the team
+            merchandise store, a section detailiing the current officers and their bios, a link to our Niner Engage page
+            for event information, our team roster, and our game schedule.</h2>
+        <br></br>
+        <h2>My client is the UNCC Men's Club Soccer Team. The team is associated with UNC Charlotte. The club
+            president's email is zkocher@uncc.edu and his phone number is 704-796-9594.
+        </h2>
+    </main>
+    <footer>
+
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+
+</body>
+
+</html>
