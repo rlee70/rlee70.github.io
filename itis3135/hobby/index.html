@@ -227,34 +227,64 @@
 <script>
     $(document).ready(function () {
         // Hide all sections initially
-        $('main section').hide();
+        $('#about-section').hide();
+        $('#seasons-section').hide();
+        $('#how-section').hide();
+        $('#why-section').hide();
+        $('#ai-section').hide();
 
         // Show the Home section by default
         $('#home-section').show();
 
         // Click event for each navbar link
         $('#home-link').click(function () {
-            $('main section').hide(); // Hide all sections
+            // Hide all sections
+            $('#about-section').hide();
+            $('#seasons-section').hide();
+            $('#how-section').hide();
+            $('#why-section').hide();
+            $('#ai-section').hide();
+
             $('#home-section').show(); // Show the Home section
         });
 
         $('#about-link').click(function () {
-            $('main section').hide();
+            $('#home-section').hide();
+            $('#seasons-section').hide();
+            $('#how-section').hide();
+            $('#why-section').hide();
+            $('#ai-section').hide();
+
             $('#about-section').show();
         });
 
         $('#seasons-link').click(function () {
-            $('main section').hide();
+            $('#about-section').hide();
+            $('#home-section').hide();
+            $('#how-section').hide();
+            $('#why-section').hide();
+            $('#ai-section').hide();
+
             $('#seasons-section').show();
         });
 
         $('#how-link').click(function () {
-            $('main section').hide();
+            $('#about-section').hide();
+            $('#seasons-section').hide();
+            $('#home-section').hide();
+            $('#why-section').hide();
+            $('#ai-section').hide();
+
             $('#how-section').show();
         });
 
         $('#why-link').click(function () {
-            $('main section').hide();
+            $('#about-section').hide();
+            $('#seasons-section').hide();
+            $('#how-section').hide();
+            $('#home-section').hide();
+            $('#ai-section').hide();
+            
             $('#why-section').show();
         });
     });
