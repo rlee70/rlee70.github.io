@@ -228,37 +228,35 @@
     $(document).ready(function () {
         // Hide all sections initially
         $('main section').hide();
-
-        // Show the Home section by default
         $('#home-section').show();
 
         // Click event for each navbar link
-        $('#home-link').click(function () {
+        $('#home-link').click(function() {
             // Hide all sections
             $('main section').hide();
 
             $('#home-section').show(); // Show the Home section
         });
 
-        $('#about-link').click(function () {
+        $('#about-link').click(function() {
             $('main section').hide();
 
             $('#about-section').show();
         });
 
-        $('#seasons-link').click(function () {
+        $('#seasons-link').click(function() {
             $('main section').hide();
 
             $('#seasons-section').show();
         });
 
-        $('#how-link').click(function () {
+        $('#how-link').click(function() {
             $('main section').hide();
 
             $('#how-section').show();
         });
 
-        $('#why-link').click(function () {
+        $('#why-link').click(function() {
             $('main section').hide();
 
             $('#why-section').show();
