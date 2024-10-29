@@ -225,12 +225,12 @@
     </footer>
     <script>
         $(document).ready(function () {
-            // Hide all sections initially
-            $('#home-section').show();
+            // Hide all sections except home initially
+            $('#about-section, #seasons-section, #how-section, #why-section').hide();
     
             // Click event for each navbar link
             $('#home-link').click(function() {
-                // Hide all sections
+                // Hides all sections
                 $('main section').hide();
     
                 $('#home-section').show(); // Show the Home section
