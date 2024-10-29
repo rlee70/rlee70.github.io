@@ -227,11 +227,11 @@
 <script>
     $(document).ready(function () {
         // Hide all sections initially
-        $('main section').hide();
-        $('#home-section').show();
+        $('#home-section').hide();
 
         // Click event for each navbar link
         $('#home-link').click(function() {
+            event.preventDefault();
             // Hide all sections
             $('main section').hide();
 
@@ -239,24 +239,28 @@
         });
 
         $('#about-link').click(function() {
+            event.preventDefault();
             $('main section').hide();
 
             $('#about-section').show();
         });
 
         $('#seasons-link').click(function() {
+            event.preventDefault();
             $('main section').hide();
 
             $('#seasons-section').show();
         });
 
         $('#how-link').click(function() {
+            event.preventDefault();
             $('main section').hide();
 
             $('#how-section').show();
         });
 
         $('#why-link').click(function() {
+            event.preventDefault();
             $('main section').hide();
 
             $('#why-section').show();
