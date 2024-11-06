@@ -11,10 +11,6 @@ main {
     margin: 20px auto;
 }
 
-.logo { 
-    border-radius: 10px;
-}
-
 footer {
     position: absolute;
     bottom: 0;
