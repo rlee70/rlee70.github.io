@@ -10,3 +10,7 @@ main {
     width: 70%;
     margin: 20px auto;
 }
+
+.logo { 
+    border-radius: 10px;
+}
