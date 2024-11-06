@@ -1,0 +1,9 @@
+body{ 
+    text-align: center;
+    background-color: #d6f7c8;
+    color: #1a5311;
+    height: 100%;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
