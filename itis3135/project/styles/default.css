@@ -17,3 +17,8 @@ footer {
     margin-left: 300px;
     margin-right: 300px;
 }
+
+.logo {
+    border-width: 10px;
+    border-color:#123b0b;
+}
