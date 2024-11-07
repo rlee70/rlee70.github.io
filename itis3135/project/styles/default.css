@@ -19,6 +19,5 @@ footer {
 }
 
 .logo {
-    border-width: 10px;
-    border-color:#123b0b;
+    border: 10px solid #123b0b;
 }
