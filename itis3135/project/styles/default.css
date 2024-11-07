@@ -12,8 +12,7 @@ main {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    position: relative;
     margin-bottom: 25px;
     left: 300px;
     right: 300px;
