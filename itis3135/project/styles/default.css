@@ -1,7 +1,7 @@
 body{ 
     text-align: center;
     background-color: #f7f7f7;
-    color: #123b0b;
+    color: #16470d;
     height: 100%;
     width: 100%;
 }
@@ -19,5 +19,5 @@ footer {
 }
 
 .logo {
-    border: 10px solid #123b0b;
+    border: 10px solid #16470d;
 }
