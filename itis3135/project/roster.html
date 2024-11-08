@@ -14,6 +14,50 @@
             margin-left: 150px;
             text-align: left;
         }
+
+        .officer-list {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 800px;
+        }
+
+        /* Officer card styling */
+        .officer-card {
+            background: #ffffff;
+            width: 150px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .officer-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Officer photo styling */
+        .officer-photo {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Officer name */
+        .officer-card h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 10px 0 5px;
+        }
+
+        /* Officer title */
+        .officer-title {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 
@@ -25,12 +69,13 @@
         </fig>
         <nav>
             <h1>UNC Charlotte Men's Club Soccer</h1>
-            <h2><a href="index.html">Home</a> | <a href="about-us.html">About Us</a> | <a href="join.html">Join</a> | 
-                <a href="schedule.html">Schedule</a></h2>
+            <h2><a href="index.html">Home</a> | <a href="about-us.html">About Us</a> | <a href="join.html">Join</a> |
+                <a href="schedule.html">Schedule</a>
+            </h2>
         </nav>
     </header>
     <main>
-        <h3>As a consequence of being the largest sports club at UNC Charlotte, we can't list everyone who 
+        <h3>As a consequence of being the largest sports club at UNC Charlotte, we can't list everyone who
             is officially a member of the club; however, our officers as of the 24/25 school year are listed below:
         </h3>
         <div class="officer-list">
