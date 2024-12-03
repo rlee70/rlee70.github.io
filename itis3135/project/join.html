@@ -14,6 +14,25 @@
             margin-left: 150px;
             text-align: left;
         }
+
+        .map {
+            border: 10px solid #16470d;
+        }
+
+        .logo {
+            border: 10px solid #16470d;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: rgb(8, 103, 1);
+        }
+
+        /* Links in dark mode */
+        body.dark-mode a {
+            color: rgb(149, 137, 0);
+        }
     </style>
 </head>
 
@@ -38,7 +57,7 @@
     <footer>
         <div data-include="components/footer.html"></div>
         <button id="toggle-theme">Toggle Dark Mode</button>
-<p>© <span id="year"></span> UNC Charlotte Men's Club Soccer. All rights reserved.</p>
+        <p>© <span id="year"></span> UNC Charlotte Men's Club Soccer. All rights reserved.</p>
     </footer>
     
     <script src="scripts/HTMLInclude.min.js"></script>
