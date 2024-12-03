@@ -8,7 +8,7 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/default.css">
     <style>
-        
+
     </style>
 </head>
 
@@ -39,15 +39,26 @@
                 <div class="event-box">Sep 28: Vs. Coastal Carolina</div>
                 <div class="event-box">Sep 29: @ Elon</div>
             </div>
-            </div>
+        </div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
-      </script>
-      <script src="scripts/HTMLInclude.min.js"></script>
+        const toggleTheme = () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        };
+
+        document.getElementById('toggleTheme').addEventListener('click', toggleTheme);
+
+        // Apply saved theme on load
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 
 </html>

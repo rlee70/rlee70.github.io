@@ -33,10 +33,10 @@
         <h3>
             We usually train on Tuesday and Thursday nights from 8pm-10pm on Field 16 at NRFC (Northeast Recreational
             Field Complex) with a game (or two) each weekend. In addition, we also look to participate in tournaments
-            hosted by other schools once a semester. Due to the size of our club, we currently have players separated 
+            hosted by other schools once a semester. Due to the size of our club, we currently have players separated
             into 3 different "teams" (gold, green, and white), however these teams are only for the purpose of game
             time, and all players practice on the same field at NRFC. Gold Team games are scheduled by the league,
-            home games are played at Field 13 on campus near the baseball and softball fields, and green and white 
+            home games are played at Field 13 on campus near the baseball and softball fields, and green and white
             team games are scheduled whenever we are able to get in touch with other schools and their secondary teams.
         </h3>
         <fig>
@@ -49,8 +49,20 @@
     <script src="scripts/HTMLInclude.min.js"></script>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+        const toggleTheme = () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        };
+
+        document.getElementById('toggleTheme').addEventListener('click', toggleTheme);
+
+        // Apply saved theme on load
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
     </script>
-      
+
+
 </body>
 
 </html>
