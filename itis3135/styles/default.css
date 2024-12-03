@@ -7,7 +7,7 @@ a {
     font-style: italic;
 }
 
-body{ 
+body { 
     text-align: center;
     background-color: #eef1ef;
     color: #003d5b;
@@ -23,3 +23,7 @@ footer {
     text-align: center;
 }
 
+main { 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
