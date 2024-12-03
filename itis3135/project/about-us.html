@@ -78,6 +78,12 @@
         // Fallback for when HTMLInclude is not used
         setYear();
     }
+
+    const toggleTheme = () => {
+            console.log('Toggle button clicked!');
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        };
     
     document.getElementById('toggle-theme').addEventListener('click', toggleTheme);
     
