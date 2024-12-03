@@ -1,6 +1,6 @@
 a {
     color: rgb(47, 119, 47);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #responsive-web-design {
@@ -24,6 +24,31 @@ footer {
 }
 
 main { 
-    max-width: 1200px; 
-    margin: 0 auto;
+    max-width: 1200px; /*for larger screens */
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    main {
+        width: 95%; 
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+    body {
+        text-align: left; 
+        padding: 10px; 
+    }
+    
+    main {
+        width: 100%; /* Allow main content to take full width on smaller screens */
+    }
+    
+    footer {
+        font-size: 14px; /* Adjust footer font size for smaller screens */
+    }
 }
