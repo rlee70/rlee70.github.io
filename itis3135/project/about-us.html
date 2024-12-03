@@ -35,7 +35,7 @@
         }
         
 
-        #toggleTheme:hover {
+        #toggle-theme:hover {
             background-color: #0056b3;
         }
     </style>
@@ -70,7 +70,7 @@
             localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
         };
 
-        document.getElementById('toggleTheme').addEventListener('click', toggleTheme);
+        document.getElementById('toggle-theme').addEventListener('click', toggleTheme);
         
         // Apply saved theme on load
         if (localStorage.getItem('theme') === 'dark') {
