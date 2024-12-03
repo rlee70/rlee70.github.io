@@ -43,7 +43,7 @@
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
-        
+        ß
     </footer>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
@@ -53,7 +53,7 @@
             localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
         };
 
-        document.getElementById('toggleTheme').addEventListener('click', toggleTheme);
+        document.getElementById('toggle-theme').addEventListener('click', toggleTheme);
 
         // Apply saved theme on load
         if (localStorage.getItem('theme') === 'dark') {
