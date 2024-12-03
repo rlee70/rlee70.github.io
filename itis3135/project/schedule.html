@@ -43,9 +43,11 @@
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
+        
     </footer>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+
         const toggleTheme = () => {
             document.body.classList.toggle('dark-mode');
             localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
