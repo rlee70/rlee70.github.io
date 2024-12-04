@@ -51,6 +51,6 @@
             countdownElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
         };
     
-        const interval = setInterval(updateCountdown, 1000);
+        
         updateCountdown(); // Call immediately to avoid 1-second delay
     });
