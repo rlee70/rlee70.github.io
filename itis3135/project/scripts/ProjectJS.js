@@ -32,7 +32,7 @@
     document.addEventListener('DOMContentLoaded', () => {
         const countdownElement = document.getElementById('countdown');
         const tryoutDate = new Date('2025-01-21T20:00:00'); // Replace with your tryout date and time (YYYY-MM-DDTHH:MM:SS)
-        
+        let interval;
         const updateCountdown = () => {
             const now = new Date();
             const timeDifference = tryoutDate - now;
@@ -51,6 +51,6 @@
             countdownElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
         };
     
-        const interval = setInterval(updateCountdown, 1000);
+        interval = setInterval(updateCountdown, 1000);
         updateCountdown(); // Call immediately to avoid 1-second delay
     });
