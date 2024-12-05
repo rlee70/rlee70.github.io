@@ -16,6 +16,24 @@
     <main>
         <h2>First JavaScripts</h2>
         <p>First Javascripts Activity</p>
+        
+        <h3 id="date-time"></h3>
+
+        <!-- User Input Form -->
+        <h3>Please Enter Your Details:</h3>
+        <label for="name">What's your name?</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="mood">How are you feeling?</label>
+        <input type="text" id="mood" placeholder="How are you feeling?" required>
+
+        <label for="fav-number">What's your favorite number (0-10)?</label>
+        <input type="number" id="fav-number" min="0" max="10" required>
+
+        <button onclick="submitInfo()">Submit</button>
+
+        <!-- Greeting and Polygon Response -->
+        <div id="greeting"></div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
