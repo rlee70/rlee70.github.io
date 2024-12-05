@@ -54,12 +54,38 @@ document.addEventListener('DOMContentLoaded', () => {
         ];
         const joke = jokes[Math.floor(Math.random() * jokes.length)];
         alert(joke);
-        }   
+        }
+        
+        function lionPunGenerator() {
+            const puns = [
+                "I'm not lion when I say you're amazing!",
+                "Stay pawsitive and roar with confidence!",
+                "Why don't lions use computers? They're afraid of mouse traps!",
+                "This is a roar-some day, isn't it?",
+                "You lion if you say you don’t love puns!"
+            ];
+            const randomPun = puns[Math.floor(Math.random() * puns.length)];
+            alert(randomPun);
+        }
+
+    function motivationalQuote() {
+            const quotes = [
+                "Believe in yourself and all that you are. 🦁",
+                "The future belongs to those who prepare for it today.",
+                "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+                "Don’t watch the clock; do what it does. Keep going.",
+                "You are stronger than you think. Keep roaring! 🦁",
+            ];
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            alert(randomQuote);
+        }
     // Call displayDateTime on page load
     displayDateTime();
     submitButton.addEventListener('click', submitInfo);  // Attach event listener to button
     document.getElementById('joke-button').addEventListener('click', lionJoke);
     document.getElementById('penalty-button').addEventListener('click', penaltyKickSimulator);
+    document.getElementById('quote-button').addEventListener('click', motivationalQuote);
+    document.getElementById('pun-button').addEventListener('click', lionPunGenerator);
     
 });
 
