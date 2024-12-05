@@ -37,3 +37,6 @@ function getPolygonName(sides) {
 
 // Call displayDateTime on page load
 displayDateTime();
+
+// Add event listener for the submit button
+document.getElementById('submit-button').addEventListener('click', submitInfo);
