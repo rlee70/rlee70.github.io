@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return polygonNames[sides] || "Polygon with " + sides + " sides";
     }
 
+    function penaltyKickSimulator() {
+        const outcomes = ["GOAL! 🥅⚽", "MISS! ❌", "SAVED by the keeper! 🧤"];
+        const outcome = outcomes[Math.floor(Math.random() * outcomes.length)];
+        alert(`You took the penalty kick... ${outcome}`);
+    }
+
     // Display current date and time
     function displayDateTime() {
         const now = new Date();
@@ -53,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     displayDateTime();
     submitButton.addEventListener('click', submitInfo);  // Attach event listener to button
     document.getElementById('joke-button').addEventListener('click', lionJoke);
+    document.getElementById('penalty-button').addEventListener('click', penaltyKickSimulator);
     
 });
 
