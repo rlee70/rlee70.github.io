@@ -10,6 +10,8 @@ function displayDateTime() {
 
 // Function to handle form submission
 function submitInfo() {
+    console.log('Submit button clicked');  // Debugging line to check if function is triggered
+    
     const name = document.getElementById('name').value;
     const mood = document.getElementById('mood').value;
     const favNumber = document.getElementById('fav-number').value;
@@ -38,5 +40,8 @@ function getPolygonName(sides) {
 // Call displayDateTime on page load
 displayDateTime();
 
-// Add event listener for the submit button
-document.getElementById('submit-button').addEventListener('click', submitInfo);
+// Add event listener for the submit button after the DOM has loaded
+document.addEventListener('DOMContentLoaded', () => {
+    const submitButton = document.getElementById('submit-button');
+    submitButton.addEventListener('click', submitInfo);  // Attach event listener to button
+});
