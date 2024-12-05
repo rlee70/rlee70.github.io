@@ -27,7 +27,7 @@ function submitInfo() {
 
     // Greet the user
     const greetingElement = document.getElementById('greeting');
-    greetingElement.textContent = `{Your Company Name} welcomes you, ${name}! We're glad you are doing ${mood}!`;
+    greetingElement.textContent = `Kicking Lion welcomes you, ${name}! We're glad you are doing ${mood}!`;
 
     // Handle favorite number and alert polygon name
     let number = Math.abs(parseFloat(favNumber)); // Convert to positive (absolute value) and handle decimals
