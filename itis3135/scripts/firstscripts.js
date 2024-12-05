@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const jokes = [
             "Why don’t lions like fast food? Because they can’t catch it!",
             "What do you call a lion wearing a stylish hat? A dandy-lion!",
-            "How do lions greet other animals? Pleased to eat you!",
+            "How do lions greet other animals? Pleased to eat you!"
         ];
         const joke = jokes[Math.floor(Math.random() * jokes.length)];
         alert(joke);
