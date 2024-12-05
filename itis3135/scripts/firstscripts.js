@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "The future belongs to those who prepare for it today.",
                 "Success is not final; failure is not fatal: It is the courage to continue that counts.",
                 "Don’t watch the clock; do what it does. Keep going.",
-                "You are stronger than you think. Keep roaring! 🦁",
+                "You are stronger than you think. Keep roaring! 🦁"
             ];
             const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
             alert(randomQuote);
