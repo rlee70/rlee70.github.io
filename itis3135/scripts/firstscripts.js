@@ -44,4 +44,5 @@ displayDateTime();
 document.addEventListener('DOMContentLoaded', () => {
     const submitButton = document.getElementById('submit-button');
     submitButton.addEventListener('click', submitInfo);  // Attach event listener to button
+    console.log("This works")
 });
