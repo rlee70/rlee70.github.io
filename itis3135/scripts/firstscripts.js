@@ -40,19 +40,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const polygonName = getPolygonName(number);
         alert(`Your favorite number of sides corresponds to a ${polygonName}.`);
     }
-
+    function lionJoke() {
+        const jokes = [
+            "Why don’t lions like fast food? Because they can’t catch it!",
+            "What do you call a lion wearing a stylish hat? A dandy-lion!",
+            "How do lions greet other animals? Pleased to eat you!",
+        ];
+        const joke = jokes[Math.floor(Math.random() * jokes.length)];
+        alert(joke);
+        }   
     // Call displayDateTime on page load
     displayDateTime();
     submitButton.addEventListener('click', submitInfo);  // Attach event listener to button
     document.getElementById('joke-button').addEventListener('click', lionJoke);
-    function lionJoke() {
-    const jokes = [
-        "Why don’t lions like fast food? Because they can’t catch it!",
-        "What do you call a lion wearing a stylish hat? A dandy-lion!",
-        "How do lions greet other animals? Pleased to eat you!",
-    ];
-    const joke = jokes[Math.floor(Math.random() * jokes.length)];
-    alert(joke);
-    }   
+    
 });
 
